@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.zyx'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("io.netty:netty-all:4.1.36.Final",
+            "com.google.protobuf:protobuf-java:3.7.1",
+            "com.google.protobuf:protobuf-java-util:3.7.1")
+
+}
